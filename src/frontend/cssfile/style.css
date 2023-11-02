@@ -1,0 +1,180 @@
+/* ロードアニメーション */
+.three-dot-load {
+    text-align: center;
+}
+
+.three-dot-load div {
+    /* 3つの箱を作られる */
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: rgba(130, 83, 217, 0.499);
+    /* 箱の角を決める */
+    border-radius: 30%;
+    /* 1.4秒かけてinfinite無限に動くという意味 */
+    animation: sk-bounce-delay 1.4s infinite;
+}
+
+/* 一つ一つの玉に遅延を設けている */
+.three-dot-load .bounce1 {
+    -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+  }
+/* 一つ一つの玉に遅延を設けている */
+.three-dot-load .bounce2 {
+    -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+}
+  
+
+@keyframes sk-bounce-delay {
+    /* 開始時に透明度0スタート */
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    /* 収縮を繰り返すアニメーション */
+    40% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(0);
+    }
+
+    /* 1.4秒後に透明度1にする */
+    100% {
+        transform: scale(0);
+        opacity: 1;
+    }
+}
+
+
+/* 画像のフェードイン */
+.rect {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation: sk-bounce-delay2 1.4s;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+    /* 繰り返し回数 */
+    animation-iteration-count: 3;
+    /* 100%からの数値からスタートする */
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes sk-bounce-delay2 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+/* ハンバーガーメニュー */
+.hamburger-menu {
+    background-color: transparent;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.hamburger-menu > span {
+    background-color: black;
+    width: 35px;
+    height: 2px;
+    display: block;
+    /* 余白に9pxを2つ分必要だから3番目は不要になるからlast-childのところを確認 */
+    margin-bottom: 9px;
+}
+
+.hamburger-menu > span:last-child {
+    margin-bottom: 0;
+  }
+
+/* ハンバーガーメニューをクリックすると背景が暗くなる */
+.menu-open {
+    background-color: black;
+}
+
+
+.menu-open .hamburger-menu > span {
+    background-color: white;
+}
+  .menu-open .hamburger-menu > span:nth-child(1) {
+    transition-delay: 70ms;
+    transform: translateY(11px) rotate(135deg);
+  }
+  .menu-open .hamburger-menu > span:nth-child(2) {
+    transition-delay: 0s;
+    transform: translateX(-18px) scaleX(0);
+  }
+  .menu-open .hamburger-menu > span:nth-child(3) {
+    transition-delay: 140ms;
+    transform: translateY(-11px) rotate(-135deg);
+  }
+
+
+
+
+/* フェードインアニメ */
+@import 'appear';
+
+img {
+    max-width: 80%;
+  }
+
+
+  .appear.up .item {
+    transform: translateY(6px);
+  }
+  
+  .appear.down .item {
+    transform: translateY(-6px);
+  }
+  
+  .appear.left .item {
+    transform: translateX(40px);
+  }
+  
+  .appear.right .item {
+    transform: translateX(-40px);
+  }
+  
+  .appear .item {
+    transition: all 0.8s;
+    opacity: 0;
+  }
+  .appear.inview .item {
+    opacity: 1;
+    transform: none;
+  }
+  .appear.inview .item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .appear.inview .item:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .appear.inview .item:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .appear.inview .item:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .appear.inview .item:nth-child(5) {
+    transition-delay: 0.5s;
+  }
+  .appear.inview .item:nth-child(6) {
+    transition-delay: 0.6s;
+  }
+
+
+
