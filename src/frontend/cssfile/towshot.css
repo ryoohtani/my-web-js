@@ -1,0 +1,68 @@
+/* towshotページの全体スタイル */
+body {
+    /* 外と内側の余白を0にする */
+    margin: 0;
+    padding: 0;
+    /* 背景をグレーで0.3程度の透明度 */
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+/* 写真及び選手名を囲っているコンテナクラス */
+.container {
+    /* containerの最大値を600px*/
+    max-width: 600px;
+    /* 写真とnameボックスを中央にする */
+    margin: 0 auto;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .6);
+}
+
+img {
+    width: 100%;
+    margin: 0;
+    /* vertical-align縦方向の位置を揃えるということ(元々top指定されている) */
+    vertical-align: top;
+}
+
+header {
+    background-color: #e6e7e8;
+    color: #333132;
+    /* ヘッダーのタイトル固定 */
+    position: fixed;
+    width: 100%;
+    /* position: fixed;を使う際は以下必要、画面上端であることを示すためにtopを指定
+       z-indexで重なりを制御 */
+    top: 0;
+    z-index: 100;
+
+    /* 以下不要であれば削除 */
+    /* margin: 0; */
+}
+
+header h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.photo {
+    /* 写真の上に要素を重ねる(親要素だから) */
+    position: relative;
+}
+.photo .inner {
+    /* 写真の下に要素を入れる(子要素だから) */
+    position: absolute;
+    /* 写真に文字を重ねるためにbottom0にする */
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+}
+.inner p {
+    padding: 10px;
+}
+.inner span {
+    margin-left: 10px;
+}
