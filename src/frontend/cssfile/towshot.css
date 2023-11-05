@@ -1,4 +1,4 @@
-/* towshotページの全体スタイル */
+towshotページの全体スタイル
 body {
     /* 外と内側の余白を0にする */
     margin: 0;
@@ -66,3 +66,5 @@ header h1 {
 .inner span {
     margin-left: 10px;
 }
+
+
