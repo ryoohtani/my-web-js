@@ -10,6 +10,8 @@ RUN apt-get update
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 # リナックスコマンドのパッケージインストール
 RUN apt-get update && apt-get install -y vim less sudo tree
+# jsonサーバー
+RUN npm install -g json-server
 
 # bunのインストール
 RUN curl -fsSL https://bun.sh/install | bash
