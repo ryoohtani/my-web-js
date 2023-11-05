@@ -1,50 +1,81 @@
 <!DOCTYPE html>
-    <html lang="ja">
+<html lang="ja">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>ROAD TO RYO</title>
+        <link rel="stylesheet" href="../cssfile/third_party/josh-reset.css">
+        <link rel="stylesheet" href="../cssfile/third_party/swiper-bundle.min.css">
         <link rel="stylesheet" href="../cssfile/style.css">
     </head>
 
     <body>
-        <div class="three-dot-load">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
+      <div id="global-container">
+        <div id="container">
+          <div id="content">
+
+            <!-- サイトトップのスライドする画像の項目 -->
+            <div class="hero">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+
+                  <!-- 1枚目の画像 -->
+                  <div class="swiper-slide">
+                    <div class="hero_title">元RIZIN・Bellatorバンタム級王者 堀口恭司選手</div>
+                    <img src="../img/horiguchi.jpeg">
+                  </div>
+                  <!-- 2枚目の画像 -->
+                  <div class="swiper-slide">
+                    <div class="hero_title">現RIZINライト級王者 ホベルト・サトシ・ソウザ選手</div>
+                    <img src="../img/satoshi.png">
+                  </div>
+                  <!-- 3枚目の画像 -->
+                  <div class="swiper-slide">
+                    <div class="hero_title">RIZINファイター(左から)井上直樹・浅倉カンナ・斎藤裕選手</div>
+                    <img src="../img/inoue.jpeg">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- swiper要素はここまで -->
+
+            <div id="main-content">
+              <!-- サイト内のメインコンテンツ -->
+              <main>
+                <section class="houses">
+                  <div>
+                    <h2 class="main-title tween-animate-title">私について</h2>
+                    <p class="sub-title tween-animate-title">札幌大学法学部卒→人材派遣業の総合職→都内SES業界で3年間業務経験(主にテスト業務 <strong>※詳細は職務経歴書に記載</strong>)<br>
+                    大の格闘技ファン、K-1・RISE・RIZIN・UFCが大好き!<strong>その他にも学生時代1ヶ月だけカナダに留学(出川英語でww)</strong></p>
+                  </div>
+
+                  <div class="box">
+                    <img src="../img/canada1.jpeg" alt="イートンセンター" class="hover-rotate">
+                    <img src="../img/canada2.jpeg" alt="街" class="hover-rotate">
+                    <img src="../img/canada3.jpeg" alt="集合写真" class="hover-rotate">
+                    <img src="../img/canada4.jpeg" alt="カナダのスタバ" class="hover-rotate">
+                </div>
+                
+
+                </section>
+
+              </main>
+            </div>
+          
+          </div>
         </div>
-
-        <div class="rect">
-
-        </div>
+      </div>
 
 
-        <div>
-            <button class="hamburger-menu"
-             onclick="document.querySelector('body').classList.toggle('menu-open')"> 
-             <!-- ボタンクリックアクション -->
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
 
-        <button onclick="document.querySelector('.appear').classList.toggle('inview');">
-            appear
-        </button> 
-        
-        <div class="appear right">
-            <div class="item"><img src="../img/image-1.jpg"></div>
-            <div class="item"><img src="../img/image-1.jpg"></div>
-            <div class="item"><img src="../img/image-1.jpg"></div>
-            <div class="item"><img src="../img/image-1.jpg"></div>
-            <div class="item"><img src="../img/image-1.jpg"></div>
-            <div class="item"><img src="../img/image-1.jpg"></div>
-            
-        </div>
-        
+      <script src="../jsfile/third_party/swiper-bundle.min.js"></script>
 
-        
+      <script src="../jsfile/lib/hero-slider.js"></script>
+
+
+
+      <script src="../jsfile/main.js"></script>
 
 
 
