@@ -2,23 +2,23 @@
 const images = [
     {
         "path": "../img/horiguchi.jpeg",
-        "name": "name01",
-        "caption": "コメント1"
+        "name": "堀口恭司選手",
+        "caption": "元RIZIN・Bellatorバンタム級王者"
     },
     {
         "path": "../img/satoshi.jpeg",
-        "name": "name02",
-        "caption": "コメント2"
+        "name": "ホベルト・サトシ・ソウザ選手",
+        "caption": "現RIZINライト級王者"
     },
     {
         "path": "../img/archuleta.jpeg",
-        "name": "name03",
-        "caption": "コメント3"
+        "name": "フアン・アーチュレッタ選手",
+        "caption": "元Bellatorバンタム級王者・現RIZINバンタム級王者"
     },
     {
         "path": "../img/inoue.jpeg",
-        "name": "name04",
-        "caption": "コメント4"
+        "name": "井上直樹・浅倉カンナ・斎藤裕選手",
+        "caption": "RIZINファイター、左から"
     },
 ];
 
