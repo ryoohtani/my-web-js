@@ -20,6 +20,26 @@ const images = [
         "name": "井上直樹・浅倉カンナ・斎藤裕選手",
         "caption": "RIZINファイター、左から"
     },
+    {
+        "path": "../img/sasaki.jpeg",
+        "name": "佐々木憂流迦選手",
+        "caption": "RIZINファザー級"
+    },
+    {
+        "path": "../img/takizawa.jpeg",
+        "name": "瀧澤謙太選手",
+        "caption": "RIZINバンタム級"
+    },
+    {
+        "path": "../img/yachi.jpeg",
+        "name": "矢地祐介選手",
+        "caption": "RIZINライト級"
+    },
+    {
+        "path": "../img/suzuki.jpeg",
+        "name": "鈴木千裕選手",
+        "caption": "現RIZINフェザー級王者"
+    },
 ];
 
 let img;
