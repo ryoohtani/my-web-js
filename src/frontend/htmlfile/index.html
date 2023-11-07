@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ROAD TO RYO</title>
+        <title>RoadToRyo</title>
+        <meta name="description" content="Learning site, 個人学習用サイト">
+        <link rel="icon" href="../img/r.jpeg">
         <link rel="stylesheet" href="../cssfile/third_party/josh-reset.css">
         <link rel="stylesheet" href="../cssfile/third_party/swiper-bundle.min.css">
         <link rel="stylesheet" href="../cssfile/style.css">
@@ -11,14 +13,32 @@
 
     <body>
       <div id="global-container">
+
+        <header class="main-header">
+          <p class="header-p">
+            ROAD TO RYO
+          </p>
+
+          <nav class="header-nav">
+            <ul class="header-ul">
+              <li class="header-li"><a href="towshot.html" target="_blank">MMA Photos</a></li>
+              <li class="header-li"><a href="webs.html" target="_blank">本サイトについて</a></li>
+              <li class="header-li"><a href="https://docs.google.com/spreadsheets/d/1eOCFuOdso-3U-bzfHhT9AbDfMWrTAyTok0sAZD7BGHU/edit?usp=sharing" target="_blank">作成予定のアプリ</a></li>
+              <li class="header-li"><a href="mailto:kazuinto64@au.com">お問い合わせ</a></li>
+              <li class="header-li"><a href="https://github.com/ryoohtani" target="_blank">GitHub</a></li>
+            </ul>
+          </nav>
+
+        </header>
+
         <div id="container">
           <div id="content">
 
+            <!-- swiper要素はここから -->
             <!-- サイトトップのスライドする画像の項目 -->
             <div class="hero">
               <div class="swiper">
                 <div class="swiper-wrapper">
-
                   <!-- 1枚目の画像 -->
                   <div class="swiper-slide">
                     <div class="hero_title">元RIZIN・Bellatorバンタム級王者 堀口恭司選手</div>
@@ -34,7 +54,6 @@
                     <div class="hero_title">RIZINファイター(左から)井上直樹・浅倉カンナ・斎藤裕選手</div>
                     <img src="../img/inoue.jpeg">
                   </div>
-
                 </div>
               </div>
             </div>
@@ -43,41 +62,108 @@
             <div id="main-content">
               <!-- サイト内のメインコンテンツ -->
               <main>
-                <section class="houses">
-                  <div>
-                    <h2 class="main-title tween-animate-title">私について</h2>
-                    <p class="sub-title tween-animate-title">札幌大学法学部卒→人材派遣業の総合職→都内SES業界で3年間業務経験(主にテスト業務 <strong>※詳細は職務経歴書に記載</strong>)<br>
+                <section class="introduction">
+                  <!-- 自己紹介 -->
+                  <div class="my-load">
+                    <h2 class="main-title">私について</h2>
+                    <p class="sub-title">札幌大学法学部卒→人材派遣業の総合職→都内SES業界で3年間業務経験(主にテスト業務 <strong>※詳細は職務経歴書に記載</strong>)<br>
                     大の格闘技ファン、K-1・RISE・RIZIN・UFCが大好き!<strong>その他にも学生時代1ヶ月だけカナダに留学(出川英語でww)</strong></p>
                   </div>
-
-                  <div class="box">
-                    <img src="../img/canada1.jpeg" alt="イートンセンター" class="hover-rotate">
-                    <img src="../img/canada2.jpeg" alt="街" class="hover-rotate">
-                    <img src="../img/canada3.jpeg" alt="集合写真" class="hover-rotate">
-                    <img src="../img/canada4.jpeg" alt="カナダのスタバ" class="hover-rotate">
-                </div>
-                
-
+                  <!-- カナダでの思い出集 -->
+                  <ul class="box">
+                    <li class="box-li">
+                      <a href="https://maps.app.goo.gl/uwUAaViXdLrSfAYy5" target="_blank">
+                        <img src="../img/canada1.jpeg" alt="イートンセンター" class="animation">
+                      </a>
+                      <div class="box-li-div">
+                        <h2 class="box-li-div-h2">イートンセンター</h2>
+                        <p class="box-li-div-p">イオンの高級バージョン、とにかくブランド品が多かった(笑)</p>
+                      </div>
+                    </li>
+                    <li class="box-li">
+                      <a href="#" target="_blank">
+                        <img src="../img/canada2.jpeg" alt="街" class="animation">
+                      </a>
+                      <div class="box-li-div">
+                        <h2 class="box-li-div-h2">寮の近くの交差点</h2>
+                        <p class="box-li-div-p">Theオシャレ、ヨーロッパみたい</p>
+                      </div>
+                    </li>
+                    <li class="box-li">
+                      <a href="https://maps.app.goo.gl/UpHj1aWsDYa2oirS9" target="_blank">
+                        <img src="../img/canada3.jpeg" alt="集合写真" class="animation">
+                      </a>
+                      <div class="box-li-div">
+                        <h2 class="box-li-div-h2">語学学校</h2>
+                        <p class="box-li-div-p">クラスメイト!ブラジルとスペインの人</p>
+                      </div>
+                    </li>
+                    <li class="box-li">
+                      <a href="https://maps.app.goo.gl/7GSuVTyeFQvMAGbD7" target="_blank">
+                        <img src="../img/canada4.jpeg" alt="集合写真" class="animation">
+                      </a>
+                      <div class="box-li-div">
+                        <h2 class="box-li-div-h2">語学学校近くのスタバ</h2>
+                        <p class="box-li-div-p">最初の1週間毎日通ってました...飲食店がわからなくて(笑)</p>
+                      </div>
+                    </li>
+                  </ul>
                 </section>
 
-              </main>
+                <section class="skill">
+                  <!-- スキルの説明文(はじめに) -->
+                  <div class="skill-sentence">
+                    <h2 class="skill-header">
+                      スキル
+                    </h2>
+                    <p class="skill-p">
+                      ※本サイトに記載されているスキルについては、現在独学中のスキルになります。<br>
+                      現場での使用技術等は職務経歴書に記載しておりますのでご確認ください。
+                    </p>
+                  </div>
+
+                  <!-- 背景のボックス(画像なども格納する) -->
+                  <div class="skill_container">
+                    <div class="skill_item">
+                      <p class="skill_title">docker・Python・Postgresのスキルについて</p>
+                      <img src="../img/skill1.jpg" alt="">
+                    </div>
+                    <div class="skill_item">
+                      <p class="skill_title">フロントの技術・AWS認定資格について</p>
+                      <img src="../img/skill2.jpg" alt="">
+                    </div>
+                  </div>
+
             </div>
-          
-          </div>
+                </section>         
+              </main>
+          </div> 
         </div>
+
+        <footer>
+          <p class="footer-p">
+            ROAD TO RYO
+          </p>
+  
+          <nav class="footer-nav">
+            <ul class="footer-ul">
+              <li class="footer-li"><a href="towshot.html" target="_blank">MMA Photos</a></li>
+              <li class="footer-li"><a href="webs.html" target="_blank">本サイトについて</a></li>
+              <li class="footer-li"><a href="https://docs.google.com/spreadsheets/d/1eOCFuOdso-3U-bzfHhT9AbDfMWrTAyTok0sAZD7BGHU/edit?usp=sharing" target="_blank">作成予定のアプリ</a></li>
+              <li class="footer-li"><a href="mailto:kazuinto64@au.com">お問い合わせ</a></li>
+              <li class="footer-li"><a href="https://github.com/ryoohtani" target="_blank">GitHub</a></li>
+            </ul>
+          </nav>
+
+          <div class="copyright">
+            &copy; 2023 Ryofa.
+          </div>
+        </footer>
+
       </div>
 
-
-
       <script src="../jsfile/third_party/swiper-bundle.min.js"></script>
-
       <script src="../jsfile/lib/hero-slider.js"></script>
-
-
-
       <script src="../jsfile/main.js"></script>
-
-
-
     </body>
 </html>
